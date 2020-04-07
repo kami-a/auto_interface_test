@@ -10,7 +10,7 @@ class OperateExcel(object):
         self.workbook = openpyxl.load_workbook(excelPathAndName)
         self.excelFile = excelPathAndName
         self.font = Font(color=None)#设置字体的颜色
-        self.RGBDict = {'red': 'FFFF3030', 'green': 'FF008B00'}
+        self.RGBDict = {'red': 'FFFF3030', 'green': 'FF008B00', 'orange':'FF8C00'}
 
     def loadWorkBook(self,excelPathAndName):
         # 将Excel加载到内存，并获取其workbook对象

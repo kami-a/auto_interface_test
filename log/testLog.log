@@ -1,0 +1,822 @@
+2020-04-07 11:27:32,622 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:109] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 28, in runTestcase
+    isExecuteColumn = self.testcases.getExecuteColumn()
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 19, in getExecuteColumn
+    return self.operateExcel.getColumn(caseSheet,testCase_isExecute)
+NameError: name 'caseSheet' is not defined
+
+2020-04-07 11:27:45,190 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:109] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 28, in runTestcase
+    isExecuteColumn = self.testcases.getExecuteColumn()
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 19, in getExecuteColumn
+    return self.operateExcel.getColumn(caseSheet,testCase_isExecute)
+NameError: name 'caseSheet' is not defined
+
+2020-04-07 11:28:18,699 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:30:58,972 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:30:58,980 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:109] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 103, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult="none")
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 46, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 11:31:13,233 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:32:14,957 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:32:22,795 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:34:19,513 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:36:34,276 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:36:55,108 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 11:36:55,272 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:98] - INFO: 接口：测试接口执行失败
+2020-04-07 11:40:21,232 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:40:48,007 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 11:40:57,391 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:98] - INFO: 接口：测试接口执行失败
+2020-04-07 11:41:19,711 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:41:19,711 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 11:41:19,825 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:98] - INFO: 接口：测试接口执行失败
+2020-04-07 11:41:23,890 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:41:27,184 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 11:42:07,370 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:98] - INFO: 接口：测试接口执行失败
+2020-04-07 11:42:40,379 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:42:43,451 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 11:42:49,343 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:98] - INFO: 接口：测试接口执行失败
+2020-04-07 11:47:02,104 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:47:03,882 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 11:47:25,445 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:98] - INFO: 接口：测试接口执行失败
+2020-04-07 11:48:02,490 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:48:04,435 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 11:48:04,967 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:99] - INFO: 接口：测试接口执行失败
+2020-04-07 11:48:23,519 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 11:48:28,890 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 13:43:21,639 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 13:43:25,679 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:19:19,475 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 14:19:22,134 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:20:15,862 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:110] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 93, in runTestcase
+    if (checkData in res.text):
+AttributeError: 'dict' object has no attribute 'text'
+
+2020-04-07 14:26:23,737 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 14:26:25,703 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:26:45,875 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:95] - INFO: 接口：测试接口执行成功
+2020-04-07 14:35:23,639 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 14:35:23,640 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:74] - INFO: *************调用关键字驱动****************
+2020-04-07 14:35:23,825 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:106] - INFO: 接口：测试接口执行成功
+2020-04-07 14:35:23,875 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:56] - INFO: *************调用关键字驱动****************
+2020-04-07 14:37:22,353 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 14:37:22,354 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:74] - INFO: *************调用关键字驱动****************
+2020-04-07 14:37:22,513 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:106] - INFO: 接口：测试接口执行成功
+2020-04-07 14:37:22,562 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:56] - INFO: *************调用关键字驱动****************
+2020-04-07 14:38:18,343 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 14:38:18,344 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:74] - INFO: *************调用关键字驱动****************
+2020-04-07 14:38:18,478 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:106] - INFO: 接口：测试接口执行成功
+2020-04-07 14:38:18,527 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:56] - INFO: *************调用关键字驱动****************
+2020-04-07 14:44:34,633 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 14:44:34,634 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:74] - INFO: *************调用关键字驱动****************
+2020-04-07 14:44:34,765 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:106] - INFO: 接口：测试接口执行成功
+2020-04-07 14:44:34,815 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:56] - INFO: *************调用关键字驱动****************
+2020-04-07 14:48:26,895 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 14:48:32,677 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:48:37,919 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:106] - INFO: 接口：测试接口执行成功
+2020-04-07 14:48:39,840 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:48:43,439 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:121] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 104, in runTestcase
+    if (checkData in res.text):
+TypeError: 'in <string>' requires string as left operand, not NoneType
+
+2020-04-07 14:49:31,210 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 14:49:32,075 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:49:33,628 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:106] - INFO: 接口：测试接口执行成功
+2020-04-07 14:49:34,617 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:50:08,731 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:121] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 104, in runTestcase
+    if (checkData in res.text):
+TypeError: 'in <string>' requires string as left operand, not NoneType
+
+2020-04-07 14:50:46,553 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 14:50:48,169 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:50:49,337 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:106] - INFO: 接口：测试接口执行成功
+2020-04-07 14:50:51,049 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:50:51,985 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:96] - INFO: 接口：测试接口执行成功
+2020-04-07 14:51:25,070 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 14:51:28,202 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:51:28,920 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:110] - INFO: 接口：测试接口执行失败
+2020-04-07 14:51:28,931 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:121] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 112, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult="failed")
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 46, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 14:51:43,499 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 14:51:43,499 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:51:43,632 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:110] - INFO: 接口：测试接口执行失败
+2020-04-07 14:51:43,662 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 14:51:43,771 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:96] - INFO: 接口：测试接口执行成功
+2020-04-07 15:06:03,559 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 15:06:05,373 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 15:06:06,786 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:110] - INFO: 接口：测试接口执行失败
+2020-04-07 15:06:07,582 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:75] - INFO: *************调用关键字驱动****************
+2020-04-07 15:06:08,343 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:96] - INFO: 接口：测试接口执行成功
+2020-04-07 15:06:08,369 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:121] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 44, in writeTestResult
+    rowNo=rowNo, colsNo=colsDict[colsNo][1], style=colorDict[testResult[0]])
+KeyError: 'p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 98, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult="pass")
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 15:18:32,441 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 15:18:32,442 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:74] - INFO: *************调用关键字驱动****************
+2020-04-07 15:18:32,641 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:93] - INFO: 接口：测试接口执行失败
+2020-04-07 15:18:32,714 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:56] - INFO: *************调用关键字驱动****************
+2020-04-07 15:18:32,836 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:96] - INFO: 接口：测试接口执行成功
+2020-04-07 15:22:32,444 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 15:22:41,485 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:36] - INFO: 接口用例
+2020-04-07 15:22:41,602 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:110] - INFO: 接口：测试接口执行失败
+2020-04-07 15:22:41,787 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:96] - INFO: 接口：测试接口执行成功
+2020-04-07 15:22:42,009 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:110] - INFO: 接口：测试接口执行失败
+2020-04-07 15:25:49,888 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:25:50,755 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口执行失败
+2020-04-07 15:25:50,764 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:201] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 192, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult=("failed",res.text))
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 15:25:59,962 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:26:00,083 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口执行失败
+2020-04-07 15:26:00,276 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口执行成功
+2020-04-07 15:26:00,781 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口执行失败
+2020-04-07 15:26:44,628 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:26:44,763 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口执行失败
+2020-04-07 15:26:44,979 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口执行成功
+2020-04-07 15:26:45,271 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口执行失败
+2020-04-07 15:27:19,795 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:27:19,933 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口执行失败
+2020-04-07 15:27:20,148 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口执行成功
+2020-04-07 15:27:20,473 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口执行失败
+2020-04-07 15:27:42,336 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:27:42,468 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:27:42,477 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:201] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 192, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult=("failed",res.text))
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 15:27:54,150 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:27:54,294 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:27:54,488 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口2执行成功
+2020-04-07 15:27:54,764 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口4执行失败
+2020-04-07 15:28:12,893 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:28:16,045 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:28:23,478 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口2执行成功
+2020-04-07 15:28:53,580 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口4执行失败
+2020-04-07 15:30:00,921 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:30:10,478 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:30:10,487 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:201] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 192, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult=("failed",res.text))
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 15:30:22,098 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:32:08,744 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:32:27,082 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:32:33,277 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口2执行成功
+2020-04-07 15:33:25,875 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口4执行失败
+2020-04-07 15:34:13,330 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:34:15,582 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:34:16,996 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口2执行成功
+2020-04-07 15:34:17,961 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 15:34:32,780 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口4执行失败
+2020-04-07 15:34:42,377 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:34:44,335 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:34:45,031 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口2执行成功
+2020-04-07 15:34:45,658 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 15:36:28,713 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:36:38,087 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:36:46,794 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口2执行成功
+2020-04-07 15:36:48,110 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 15:36:52,133 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 15:36:52,135 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:202] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 141, in runTestcase
+    dataSheet = self.testcases.operateExcel.getSheetByName(dataSheetName)
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 31, in getSheetByName
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 28, in getSheetByName
+    sheet = self.workbook.get_sheet_by_name(sheetName)
+  File "E:\Python37\Lib\site-packages\openpyxl\compat\__init__.py", line 38, in new_func1
+    return func1(*args, **kwargs)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 263, in get_sheet_by_name
+    return self[name]
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 289, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet y does not exist.'
+
+2020-04-07 15:37:34,624 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:37:37,024 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:37:38,418 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口2执行成功
+2020-04-07 15:37:39,131 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 15:37:41,473 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 15:37:41,475 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:202] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 141, in runTestcase
+    dataSheet = self.testcases.operateExcel.getSheetByName(dataSheetName)
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 31, in getSheetByName
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 28, in getSheetByName
+    sheet = self.workbook.get_sheet_by_name(sheetName)
+  File "E:\Python37\Lib\site-packages\openpyxl\compat\__init__.py", line 38, in new_func1
+    return func1(*args, **kwargs)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 263, in get_sheet_by_name
+    return self[name]
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 289, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet None does not exist.'
+
+2020-04-07 15:38:26,734 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:38:28,093 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:38:28,815 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口2执行成功
+2020-04-07 15:38:30,183 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 15:38:32,125 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 15:41:09,187 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:41:09,341 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:41:09,533 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口2执行成功
+2020-04-07 15:41:14,774 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 15:41:16,265 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 15:41:32,443 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 15:41:32,562 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据："adWords":""23414执行失败
+2020-04-07 15:41:35,211 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例"adWords"
+2020-04-07 15:41:35,950 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据：adWords执行失败
+2020-04-07 15:41:37,155 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 15:41:37,282 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据："adWords":""23414执行失败
+2020-04-07 15:41:40,641 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 15:41:40,748 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据："adWords":""23414执行失败
+2020-04-07 15:41:40,829 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:151] - INFO: 接口：测试接口4执行失败
+2020-04-07 15:48:42,342 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:48:42,474 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:48:42,685 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:176] - INFO: 接口：测试接口2执行成功
+2020-04-07 15:48:42,739 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 15:48:42,762 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:202] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 44, in writeTestResult
+    rowNo=rowNo, colsNo=colsDict[colsNo][1], style=colorDict[testResult[0]])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 127, in writeCell
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 124, in writeCell
+    font = Font(color=self.RGBDict[style])
+  File "E:\Python37\Lib\site-packages\openpyxl\styles\fonts.py", line 91, in __init__
+    self.color = color
+  File "E:\Python37\Lib\site-packages\openpyxl\styles\colors.py", line 134, in __set__
+    value = Color(rgb=value)
+  File "E:\Python37\Lib\site-packages\openpyxl\styles\colors.py", line 94, in __init__
+    self.rgb = rgb
+  File "E:\Python37\Lib\site-packages\openpyxl\styles\colors.py", line 62, in __set__
+    raise ValueError("Colors must be aRGB hex values")
+ValueError: Colors must be aRGB hex values
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 196, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="dataSheet", testResult=("none","none"))
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 15:50:47,308 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:50:47,309 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:202] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 184, in runTestcase
+    if (checkData in res.text):
+AttributeError: 'str' object has no attribute 'text'
+
+2020-04-07 15:50:51,640 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:50:51,641 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:202] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 184, in runTestcase
+    if (checkData in res.text):
+AttributeError: 'str' object has no attribute 'text'
+
+2020-04-07 15:51:05,242 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:51:05,243 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:202] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 184, in runTestcase
+    if (checkData in res.text):
+AttributeError: 'str' object has no attribute 'text'
+
+2020-04-07 15:53:43,277 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:53:43,438 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口1执行失败
+2020-04-07 15:53:43,600 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口2执行失败
+2020-04-07 15:53:43,650 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 15:53:43,703 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 15:53:43,703 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 15:53:43,841 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据："adWords":""23414执行失败
+2020-04-07 15:53:43,890 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例"adWords"
+2020-04-07 15:53:44,005 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据：adWords执行失败
+2020-04-07 15:53:44,106 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 15:53:44,234 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据："adWords":""23414执行失败
+2020-04-07 15:53:44,287 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 15:53:44,420 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据："adWords":""23414执行失败
+2020-04-07 15:53:44,472 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:151] - INFO: 接口：测试接口4执行失败
+2020-04-07 15:54:40,222 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:54:40,357 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 15:54:40,366 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:202] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 188, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult=("pass",res.text))
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 15:54:47,860 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:54:47,995 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 15:54:48,170 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口2执行失败
+2020-04-07 15:54:48,223 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 15:54:48,311 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 15:54:48,312 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 15:54:48,444 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据："adWords":""23414执行失败
+2020-04-07 15:54:48,495 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例"adWords"
+2020-04-07 15:54:48,618 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据：adWords执行失败
+2020-04-07 15:54:48,722 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 15:54:48,834 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据："adWords":""23414执行失败
+2020-04-07 15:54:48,885 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 15:54:49,018 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据："adWords":""23414执行失败
+2020-04-07 15:54:49,072 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:151] - INFO: 接口：测试接口4执行失败
+2020-04-07 15:56:21,407 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 15:56:21,536 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 15:56:21,698 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口2执行失败
+2020-04-07 15:56:21,750 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 15:56:21,803 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 15:56:21,803 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":"""
+2020-04-07 15:56:21,939 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 15:56:21,993 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例"adWords"
+2020-04-07 15:56:22,106 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 15:56:22,207 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 15:56:22,319 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""23414执行成功
+2020-04-07 15:56:22,374 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 15:56:22,496 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""23414执行成功
+2020-04-07 15:56:22,548 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:146] - INFO: 接口：测试接口4执行成功
+2020-04-07 16:00:15,797 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:00:15,945 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:00:16,152 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:00:25,049 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 16:00:32,733 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:00:32,736 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:00:32,860 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 16:00:32,939 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例"adWords"
+2020-04-07 16:00:33,063 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:00:33,217 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 16:00:33,338 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""23414执行成功
+2020-04-07 16:00:33,416 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 16:00:35,408 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""23414执行成功
+2020-04-07 16:00:35,491 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:146] - INFO: 接口：测试接口4执行成功
+2020-04-07 16:01:12,587 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:01:12,745 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:01:12,963 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:01:13,044 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 16:01:13,129 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:01:13,131 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:01:21,807 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 16:01:21,890 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例"adWords"
+2020-04-07 16:01:25,977 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:01:26,139 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 16:01:29,552 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""23414执行成功
+2020-04-07 16:01:29,641 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 16:01:59,479 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""23414执行成功
+2020-04-07 16:01:59,566 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:146] - INFO: 接口：测试接口4执行成功
+2020-04-07 16:02:05,603 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:02:05,742 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:02:05,937 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:02:06,016 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 16:02:06,112 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:02:06,114 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:02:27,439 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 16:02:27,521 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例"adWords"
+2020-04-07 16:02:36,888 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:02:37,046 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 16:03:25,612 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:03:25,742 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:03:25,753 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:202] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 188, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult=("pass",res.text))
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 16:03:37,386 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:03:37,546 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:03:37,749 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:03:37,827 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 16:03:37,907 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:03:37,910 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:03:52,421 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 16:03:52,503 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例"adWords"
+2020-04-07 16:05:04,302 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:05:04,464 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 16:14:18,160 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:14:18,308 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:14:18,502 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:14:18,580 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 16:14:18,660 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:14:18,663 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:17:17,223 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:17:17,401 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:17:17,410 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:202] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 188, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult=("pass",res.text))
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 16:17:27,796 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:17:27,940 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:17:28,136 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:17:28,214 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 16:17:28,291 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:17:28,293 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:35:40,147 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:35:40,311 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:35:40,522 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:35:40,602 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 16:35:40,680 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:35:42,600 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:35:50,028 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 16:35:50,108 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:35:51,804 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:35:51,963 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 16:35:52,801 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据："adWords":""23414执行失败
+2020-04-07 16:35:52,905 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例""adWords":""23414"
+2020-04-07 16:36:12,752 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据："adWords":""23414执行失败
+2020-04-07 16:36:12,830 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:151] - INFO: 接口：测试接口4执行失败
+2020-04-07 16:36:53,800 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:36:53,921 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:186] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:36:54,076 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:190] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:36:54,125 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:194] - INFO: 接口：测试接口3未执行
+2020-04-07 16:36:54,175 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:36:54,175 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:36:54,278 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 16:36:54,327 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:36:54,434 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:36:54,529 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:36:54,668 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:36:54,717 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:36:54,842 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:36:54,893 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:146] - INFO: 接口：测试接口4执行成功
+2020-04-07 16:44:47,633 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:44:47,803 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:44:47,812 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:201] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 187, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult=("pass",res.text))
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 16:48:49,295 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:48:49,479 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:48:49,655 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:189] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:48:49,708 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:193] - INFO: 接口：测试接口3未执行
+2020-04-07 16:48:49,758 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:48:49,759 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:46] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:48:49,759 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:201] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 143, in runTestcase
+    result = self.dataDrivenFun(apiRow, dataSheet)
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 97, in dataDrivenFun
+    raise e
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 68, in dataDrivenFun
+    res = self.ir.main_req(data_method, url, data_requestData, data_header)
+UnboundLocalError: local variable 'data_method' referenced before assignment
+
+2020-04-07 16:54:07,533 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:54:07,665 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:54:07,857 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:189] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:54:07,911 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:193] - INFO: 接口：测试接口3未执行
+2020-04-07 16:54:07,964 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:54:07,965 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:54:08,100 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 16:54:08,152 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:54:08,292 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:54:08,626 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:54:08,757 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:54:08,814 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:54:08,949 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:54:09,005 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:146] - INFO: 接口：测试接口4执行成功
+2020-04-07 16:54:24,059 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:54:24,190 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:54:24,446 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:189] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:54:24,496 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:193] - INFO: 接口：测试接口3未执行
+2020-04-07 16:54:24,547 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:54:24,547 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:54:24,721 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 16:54:24,770 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:54:24,939 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:54:25,041 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:54:25,160 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:54:25,213 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords123"
+2020-04-07 16:54:25,402 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据：adWords123执行失败
+2020-04-07 16:54:25,453 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:150] - INFO: 接口：测试接口4执行失败
+2020-04-07 16:56:22,408 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:56:22,554 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:56:22,565 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:201] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 187, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult=("pass",res.text))
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 16:56:39,542 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:56:39,671 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:56:39,878 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:189] - INFO: 接口：测试接口2执行失败
+2020-04-07 16:56:39,963 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:193] - INFO: 接口：测试接口3未执行
+2020-04-07 16:56:40,048 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:56:40,051 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:56:48,874 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 16:56:48,959 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:56:49,083 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:56:49,243 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:56:49,403 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:56:49,483 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:56:49,601 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:56:49,682 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:146] - INFO: 接口：测试接口4执行成功
+2020-04-07 16:57:50,627 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:57:50,778 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:57:50,988 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:175] - INFO: 接口：测试接口2执行成功
+2020-04-07 16:57:51,070 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:193] - INFO: 接口：测试接口3未执行
+2020-04-07 16:57:51,152 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 16:57:51,153 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例""adWords":"""
+2020-04-07 16:57:51,274 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 16:57:51,356 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:57:51,477 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:57:51,642 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:57:51,770 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:57:51,853 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 16:57:51,963 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 16:58:30,022 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:146] - INFO: 接口：测试接口4执行成功
+2020-04-07 16:59:08,616 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 16:59:08,775 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 16:59:08,934 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:201] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 183, in runTestcase
+    if (checkData in res.text):
+TypeError: 'in <string>' requires string as left operand, not int
+
+2020-04-07 17:00:04,830 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 17:00:04,968 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:201] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 183, in runTestcase
+    if (checkData.toString() in res.text):
+AttributeError: 'str' object has no attribute 'toString'
+
+2020-04-07 17:00:57,865 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 17:00:57,979 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 17:00:58,154 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:189] - INFO: 接口：测试接口2执行失败
+2020-04-07 17:00:58,203 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:193] - INFO: 接口：测试接口3未执行
+2020-04-07 17:00:58,255 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 17:00:58,255 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例""adWords":"""
+2020-04-07 17:00:58,372 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 17:00:58,423 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 17:00:58,552 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 17:00:58,651 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 17:00:58,778 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 17:00:58,828 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 17:00:58,942 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 17:00:58,994 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:146] - INFO: 接口：测试接口4执行成功
+2020-04-07 17:01:20,496 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 17:01:20,634 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 17:01:20,642 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:201] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 187, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult=("pass",res.text))
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 17:01:22,480 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 17:01:22,606 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 17:01:22,614 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:201] - ERROR: 出现异常Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 41, in writeTestResult
+    self.operateExcel.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 147, in writeCellCurrentTime
+    raise e
+  File "f:\GitRepo\auto_interface_test\util\OperateExcel.py", line 145, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\Lib\site-packages\openpyxl\workbook\workbook.py", line 408, in save
+    save_workbook(self, filename)
+  File "E:\Python37\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'f:\\GitRepo\\auto_interface_test\\testcase\\Testcases.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:\GitRepo\auto_interface_test\basic\RunTestcase.py", line 187, in runTestcase
+    self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult=("pass",res.text))
+  File "f:\GitRepo\auto_interface_test\basic\Testcase.py", line 48, in writeTestResult
+    print(u"写excel时发生异常,",+traceback.print_exc())
+TypeError: bad operand type for unary +: 'NoneType'
+
+2020-04-07 17:01:34,565 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:116] - INFO: 接口用例
+2020-04-07 17:01:34,707 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:185] - INFO: 接口：测试接口1执行成功
+2020-04-07 17:01:34,879 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:189] - INFO: 接口：测试接口2执行失败
+2020-04-07 17:01:34,935 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:193] - INFO: 接口：测试接口3未执行
+2020-04-07 17:01:34,993 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:137] - INFO: ***********调用数据驱动************
+2020-04-07 17:01:34,993 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例""adWords":"""
+2020-04-07 17:01:35,129 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据："adWords":""执行成功
+2020-04-07 17:01:35,179 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 17:01:35,280 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 17:01:35,384 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords"
+2020-04-07 17:01:35,497 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:82] - INFO: 数据：adWords执行成功
+2020-04-07 17:01:35,548 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:34] - INFO: 开始执行用例"adWords123"
+2020-04-07 17:01:35,664 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:86] - INFO: 数据：adWords123执行失败
+2020-04-07 17:01:35,718 - f:\GitRepo\auto_interface_test\basic\RunTestcase.py[line:150] - INFO: 接口：测试接口4执行失败

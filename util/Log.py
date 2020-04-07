@@ -28,7 +28,7 @@ class Logger(object):
         # midnight 每天凌晨
 
         #创建error日志发送
-        fh = handlers.TimedRotatingFileHandler(filename='./testResultLog/errorLog.log',when=when,backupCount=backCount,encoding='utf-8')
+        fh = handlers.TimedRotatingFileHandler(filename='./errorLog.log',when=when,backupCount=backCount,encoding='utf-8')
         fh.setLevel(self.level_relations.get('warning'))
         fh.setFormatter(format_str)
 

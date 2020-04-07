@@ -21,29 +21,30 @@ for parent,dirnames,filenames in os.walk(testcase_path):
 
 # 测试用例表
 testCase_testCaseName = 2
-testCase_frameWorkName = 4
-testCase_apiSheetName = 5
-testCase_dataSourseSheetName = 6
-testCase_isExecute = 7
-testCase_runTime = 8
-testCase_testResult = 9
-testCase_executeNum = 10
-testCase_successNum = 11
+testCase_describe = 3
+testCase_apiSheetName = 4
+testCase_isExecute = 5
+testCase_runTime = 6
+testCase_executeNum = 7
+testCase_successNum = 8
 
 # 接口用例表
 api_name = 2
 api_isExecute = 3
-api_url = 4
-api_requestMethod = 5
-api_requestHeader = 6
-api_requestData = 7
-api_checkData = 8
-api_responseData = 9
-api_runTime = 10
-api_testResult = 11
+api_frameWorkName = 4
+api_dataSourseSheetName = 5
+api_url = 6
+api_requestMethod = 7
+api_requestHeader = 8
+api_requestData = 9
+api_checkData = 10
+api_responseData = 11
+api_runTime = 12
+api_testResult = 13
 
 # 数据源表
 dataSource_name = 2
+dataSource_responseData = 7
 dataSource_isExcute = 8
 dataSource_runtime = 9
 dataSource_result = 10
