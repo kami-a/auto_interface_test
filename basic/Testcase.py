@@ -6,9 +6,16 @@ from config.VarConfig import *
 import traceback
 
 class Testcase(object):
+    # def __init__(self, excelPathAndName):
+    #     self.apiTestcase = []
+    #     self.operateExcel = OperateExcel(excelPathAndName = excelPathAndName)
+    #     self.caseSheet = self.operateExcel.getSheetByName('测试用例')
+    #     self.excelPathAndName = excelPathAndName
+
     def __init__(self, excelPathAndName):
         self.apiTestcase = []
-        self.operateExcel = OperateExcel(excelPathAndName = excelPathAndName)
+        self.operateExcel = OperateExcel()
+        self.operateExcel.loadWorkBook(excelPathAndName=excelPathAndName)
         self.caseSheet = self.operateExcel.getSheetByName('测试用例')
         self.excelPathAndName = excelPathAndName
 

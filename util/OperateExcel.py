@@ -6,9 +6,15 @@ import time
 
 class OperateExcel(object):
 
-    def __init__(self,excelPathAndName):
-        self.workbook = openpyxl.load_workbook(excelPathAndName)
-        self.excelFile = excelPathAndName
+    # def __init__(self,excelPathAndName):
+    #     self.workbook = openpyxl.load_workbook(excelPathAndName)
+    #     self.excelFile = excelPathAndName
+    #     self.font = Font(color=None)#设置字体的颜色
+    #     self.RGBDict = {'red': 'FFFF3030', 'green': 'FF008B00', 'orange':'FF8C00'}
+
+    def __init__(self):
+        self.workbook = None
+        self.excelFile = None
         self.font = Font(color=None)#设置字体的颜色
         self.RGBDict = {'red': 'FFFF3030', 'green': 'FF008B00', 'orange':'FF8C00'}
 

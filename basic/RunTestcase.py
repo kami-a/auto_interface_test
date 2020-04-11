@@ -77,7 +77,7 @@ class RunTestcase(object):
                             # 接口执行失败写入接口用例Excel
                             self.testcases.writeTestResult(dataSheet, rowNo=idx + 2, colsNo="dataSheet", testResult=("failed",res.text))
                     else:
-                        if (checkData in res.text):
+                        if (str(checkData) in res.text):
                             successDatas += 1
                             log.logger.info('数据：%s执行成功' % (nameColumn[idx+1].value))
                             # 接口执行成功写入接口用例Excel
@@ -113,7 +113,7 @@ class RunTestcase(object):
                     executeCase += 1
                     # 获取测试用例列中，当前行执行的接口用例的sheet名
                     apiSheetName = self.testcases.operateExcel.getCellOfValue(caseSheet, rowNo=idx + 2, colsNo=testCase_apiSheetName)
-                    log.logger.info('%s'%(apiSheetName))
+                    log.logger.info("接口用例：'%s'开始执行"%(apiSheetName))
                     # 获取当前执行行接口测试用例的sheet对象
                     apiSheet = self.testcases.operateExcel.getSheetByName(apiSheetName)
                     # 获取接口用例中的接口数
@@ -194,6 +194,7 @@ class RunTestcase(object):
                             # 接口未执行写入接口用例Excel
                             self.testcases.writeTestResult(apiSheet, rowNo=index, colsNo="api", testResult=("none","none"))
                     self.testcases.writeTestResult(caseSheet,rowNo=idx + 2,colsNo="testCase",testResult=(executeApi,successfulApi))
+                    log.logger.info("接口用例：'%s'执行完成"%(apiSheetName))
                 else:
                     # 在caseSheet表内写入该接口用例表执行0成功0
                     self.testcases.writeTestResult(caseSheet,rowNo=idx + 2,colsNo="testCase",testResult=(0,0))
